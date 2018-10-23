@@ -7,7 +7,7 @@
     <title>Christa's Blog</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.7.1/css/bulma.min.css" />
-    <!-- <link rel="stylesheet" type="text/css" media="screen" href="main.css" /> -->
+    <link rel="stylesheet" type="text/css" media="screen" href="styles.css" />
     <script src="main.js"></script>
 </head>
 
@@ -25,7 +25,7 @@
             </div>
         </div>
     </section>
-    <section>
+    <section id="post-data-section">
         <div class="columns">
             <div class="column is-half">
                 <div class="container">
@@ -48,8 +48,54 @@
             </div>
         </div>
     </section>
+    <section class="hide" id="create-section">
+        <div class="container">
+            <form class="" id="post-form">
+                <div class="container">
+                    <div class="field ">
+                        <label class="label">Post Title</label>
+                        <div class="control">
+                            <input name="title" class="input" type="text" placeholder="Sweden the new Dystopia?">
+                        </div>
+                    </div>
+                    <div class="field ">
+                        <label class="label">Content</label>
+                        <div class="control">
+                            <input name="content" class="textarea" type="textarea" placeholder="4000 in tech community in Sweden implant microchips...">
+                        </div>
+                    </div>
+                    <div class="control">
+                        <input type="submit" class="button is-link" id="submitButton"></input>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </section>
+    <section class="hide" id="edit-section">
+            <div class="container">
+                <form class="" id="edit-form">
+                    <div class="container">
+                        <div class="field ">
+                            <label class="label">Post Title</label>
+                            <div class="control">
+                                <input name="title" class="input" type="text" placeholder="">
+                            </div>
+                        </div>
+                        <div class="field ">
+                            <label class="label">Content</label>
+                            <div class="control">
+                                <input name="content" class="textarea" type="textarea" placeholder="">
+                            </div>
+                        </div>
+                        <div class="control">
+                            <input type="submit" class="button is-link" id="editSubmitButton"></input>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </section>
     <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
-      <script src="main.js"></script>
+    <script src="main.js"></script>
 </body>
 
 </html>
